@@ -10,4 +10,4 @@ Designed by [Katungi Yassin](https://wa.me/256758185721)
 
 ## This is the image of the homepage
 
-![homepage](/fullpage.jpg)
+![homepage](/fullpage.png)
