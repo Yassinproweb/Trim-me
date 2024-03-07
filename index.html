@@ -1,0 +1,439 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=1280">
+
+  <!-- link to google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+  <!-- linkto tailwindcss -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- link to phosphor icons -->
+  <link rel="stylesheet" href="fill.css">
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- link to favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.png">
+
+  <!-- title of the page -->
+  <title>Trim_me</title>
+</head>
+<body>
+  <header class="fixed items-center justify-between top-0 left-0 bg-[--b] z-[1000]">
+    <h3 class="text-4xl text-[--c] font-extrabold flex items-center gap-1.5"><img src="favicon.png" alt="logo of trim_me" class="w-10"> Trim_me</h3>
+    
+    <nav class="w-full items-center justify-center gap-5 font-['Advent_Pro'] font-semibold">
+      <a href="#" class="text-[--w] text-xl hover:text-[--c] capitalize">home</a>
+      <a href="#about" class="text-[--w] text-xl hover:text-[--c] capitalize">about</a>
+      <a href="#services" class="text-[--w] text-xl hover:text-[--c] capitalize">services</a>
+      <a href="#mission" class="text-[--w] text-xl hover:text-[--c] capitalize">our mission</a>
+      <a href="#blog" class="text-[--w] text-xl hover:text-[--c] capitalize">blog</a>
+      <a href="#contact" class="text-[--w] text-xl hover:text-[--c] capitalize">contact us</a>
+    </nav>
+    
+    <button id="location" class="text-[--w] text-base bg-[--c] px-5 py-2.5 capitalize rounded">book&nbsp;VIP&nbsp;now</button>
+  </header>
+
+  <section id="hero" class="relative aspect-video items-center justify-between bg-[url('/home.jpg')] bg-[125px] z-10">
+    <div id="gradient" class="absolute w-full h-full top-0 left-0 flex-col justify-center px-24">
+      <div class="w-2/4 items-center justify-between gap-12">
+        <span class="w-full h-0.5 bg-[--c]"></span>
+        <h6 class="text-base text-[--c] font-semibold uppercase">Kampala,&nbsp;Uganda</h6>
+        <span class="w-full h-0.5 bg-[--c]"></span>
+      </div>
+      <div class="w-1/2 flex-col gap-5">
+        <h1 class="text-[--w] text-7xl font-extrabold capitalize flex items-center">
+          we care for your hair and beard
+          <span class="w-36 flex flex-col items-end justify-center gap-7">
+            <img src="/dresser.png" alt="hairwash image" class="w-32">
+            <img src="/beard.png" alt="beard image" class="w-24">
+          </span>
+        </h1>
+        <p class="text-[--l]">We specialize in the art of grooming tailored to perfection. From the crisp lines of a clean shave to the seamless blending of a brush cut, we sculpt your style with precision and care.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="relative aspect-video flex-col justify-between bg-[--b]">
+    <img src="/cbt.svg" id="cbt" alt="waves" class="absolute bottom-9 right-7 w-1/3 aspect-[2.25/4] object-cover object-center">
+    <div class="w-full items-center justify-between z-20">
+      <div class="w-80 flex-col gap-3.5">
+        <div class="w-full items-center justify-between text-[--w]">
+          <span class="w-24 aspect-square flex items-center justify-center rounded-3xl rounded-br-none bg-[--c]">
+            <img src="/location.png" alt="location barbershop" class="w-16">
+          </span>
+          <h6 class="text-xl font-bold capitalize">Frontee Plaza: Room F-026,<br>Northern Street Central,<br>Kampala, Uganda.</h6>
+        </div>
+        <h5 class="text-[--c] text-4xl font-extrabold capitalize">with&nbsp;10&nbsp;years&nbsp;in&nbsp;service</h5>
+      </div>
+      <h3 class="w-fit text-end text-[--w] text-7xl font-extrabold capitalize">since 2014, 10 years of<br>customer service in Uganda</h3>
+    </div>
+
+    <p class="w-full text-[--l] text-lg z-20">With years of combined experience, our skilled barbers at Trim_me Barbershop bring a wealth of expertise to every haircut, shave, and styling session. Our commitment to quality, attention to detail, and dedication to customer satisfaction sets us apart in the industry. Join our loyal clientele and experience why we're the preferred choice for discerning individuals seeking top-tier grooming services.</p>
+    <p class="w-full text-[--l] text-lg z-20">We believe in inclusivity and style for all. Our commitment extends beyond gender, offering a welcoming space where everyone can find their signature look. Join us and embrace the confidence of personalized grooming.</p>
+
+    <div class="w-full flex-col gap-7 z-20">
+      <h3 class="text-[--l] text-5xl font-extrabold capitalize">our working hours</h3>
+      <div class="w-5/12 items-center gap-9">
+        <div class="w-fit flex-col gap-3.5">
+          <h4 class="text-3xl text-[--c] font-bold capitalize">Sun - Thur</h4>
+          <p class="text-lg text-[--l] font-medium uppercase">09:00 - 21:00</p>
+        </div>
+        <div class="w-fit flex-col gap-3.5">
+          <h4 class="text-3xl text-[--c] font-bold capitalize">Friday</h4>
+          <p class="text-lg text-[--l] font-medium uppercase">14:00 - 21:00</p>
+        </div>
+        <div class="w-fit flex-col gap-3.5">
+          <h4 class="text-3xl text-[--c] font-bold capitalize">Saturday</h4>
+          <p class="text-lg text-[--l] font-medium uppercase">10:00 - 21:00</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="relative aspect-[4/2.5] flex-col justify-center gap-9 bg-[--b] z-10">
+    <div class="absolute w-5/12 h-full top-0 right-0">
+      <img src="/wash.jpg" alt="hair washing" class="absolute w-4/6 aspect-square top-24 right-4 object-center object-cover z-10 outline outline-[16px] outline-offset-[0px] outline-[--b]">
+      <img src="/img.jpg" alt="haircuts" class="absolute w-2/3 aspect-square bottom-28 left-9 object-center object-cover">
+    </div>
+    <div class="w-2/3 flex-col justify-center gap-9 z-30">
+      <h3 class="text-6xl text-[--w] font-extrabold capitalize">providing our customers <br>with <span class="text-[--c]">quality services</span></h3>
+
+      <div id="carousel" class="w-full flex-col justify-center gap-7">
+        <div class="w-full grid grid-cols-3 items-center gap-0.5 flex-wrap">
+          <div class="w-full aspect-square flex-col justify-between p-5 bg-[--t]">
+            <img src="shaver.png" alt="hair barber service image" class="w-12">
+            <div class="w-full flex-col gap-3.5">
+              <h4 class="text-2xl text-[--w] font-bold">Hair Cuts</h4>
+              <p class="text-[--l] text-lg"></p>
+            </div>
+            <span class="text-[--c] text-3xl font-extrabold font-['Advent_Pro'] flex items-center">50,000<span class="text-xl">/=</span></span>
+          </div>
+          <div class="w-full aspect-square flex-col justify-between p-5 bg-[--t]">
+            <img src="/scissors.png" alt="hair barber service image" class="w-12">
+            <div class="w-full flex-col gap-3.5">
+              <h4 class="text-2xl text-[--w] font-bold">Hair Trimming</h4>
+              <p class="text-[--l] text-lg"></p>
+            </div>
+            <span class="text-[--c] text-3xl font-extrabold font-['Advent_Pro'] flex items-center">25,000<span class="text-xl">/=</span></span>
+          </div>
+          <div class="w-full aspect-square flex-col justify-between p-5 bg-[--t]">
+            <img src="/razor.png" alt="hair barber service image" class="w-12">
+            <div class="w-full flex-col gap-3.5">
+              <h4 class="text-2xl text-[--w] font-bold">Hair Lining</h4>
+              <p class="text-[--l] text-lg"></p>
+            </div>
+            <span class="text-[--c] text-3xl font-extrabold font-['Advent_Pro'] flex items-center">15,000<span class="text-xl">/=</span></span>
+          </div>
+          <div class="w-full aspect-square flex-col justify-between p-5 bg-[--t]">
+            <img src="dryer.png" alt="hair barber service image" class="w-12">
+            <div class="w-full flex-col gap-3.5">
+              <h4 class="text-2xl text-[--w] font-bold">Hair Styling</h4>
+              <p class="text-[--l] text-lg"></p>
+            </div>
+            <span class="text-[--c] text-3xl font-extrabold font-['Advent_Pro'] flex items-center">50,000<span class="text-xl">/=</span></span>
+          </div>
+          <div class="w-full aspect-square flex-col justify-between p-5 bg-[--t]">
+            <img src="/apron.png" alt="hair barber service image" class="w-12">
+            <div class="w-full flex-col gap-3.5">
+              <h4 class="text-2xl text-[--w] font-bold">Salon Tools</h4>
+              <p class="text-[--l] text-lg"></p>
+            </div>
+            <span class="text-[--c] text-3xl font-extrabold font-['Advent_Pro'] flex items-center">UGX 10,000<span class="text-4xl font-normal">+</span></span>
+          </div>
+          <div class="w-full aspect-square flex-col justify-between p-5 bg-[--t]">
+            <img src="/trolley.png" alt="hair barber service image" class="w-12">
+            <div class="w-full flex-col gap-3.5">
+              <h4 class="text-2xl text-[--w] font-bold">Beard & Hair</h4>
+              <p class="text-[--l] text-lg"></p>
+            </div>
+            <span class="text-[--c] text-3xl font-extrabold font-['Advent_Pro'] flex items-center">25,000<span class="text-xl">/=</span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="mission" class="relative aspect-[4/3.35] flex-col justify-between bg-[--b]">
+    <img src="/wwn.svg" id="wwn" alt="waves" class="absolute top-16 right-0 w-1/3 h-full object-cover object-center">
+    <div class="relative w-full items-center justify-center px-[7vw] gap-[69px]">
+      <img src="/comb.jpg" alt="barber trimming hair" class="relative w-2/5 aspect-square object-cover object-center img-shadow">
+      
+      <div class="w-full flex-col justify-center gap-7">
+        <h3 class="text-6xl text-[--w] font-extrabold capitalize">we care about your <span class="text-[--c]">hair and beard</span></h3>
+        <p class="text-[--l] font-medium"><span class="text-[--w] font-semibold">Trim_me</span> commits to delivering exceptional hair care for both men and women, crafting individualized styles, and meticulously tending to beards with precision, ensuring every customer feels pampered and satisfied with their experience.</p>
+        <div class="w-full flex-col justify-center gap-3.5 text-[--w] text-lg font-medium">
+          <div class="w-full items-center gap-3">
+            <i class="ph-fill ph-seal-check text-3xl text-[--c]"></i>
+            <p>We take care about you and your lifestyle.</p>
+          </div>
+          <div class="w-full gap-3">
+            <i class="ph-fill ph-seal-check text-3xl text-[--c] -mt-1"></i>
+            <p>Hair and Beard are some of the most important features for enhancing your beauty.</p>
+          </div>
+          <div class="w-full gap-3">
+            <i class="ph-fill ph-seal-check text-3xl text-[--c] -mt-1"></i>
+            <p>We have over 10 years of experience. We are willing to savour your lifestyle and beauty.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="relative w-full items-center">
+      <h3 class="absolute -left-32 text-[--w] text-6xl font-extrabold capitalize vertical">our&nbsp;<span class="text-[--c]">stylists</span></h3>
+
+      <div class="w-full grid grid-cols-3 gap-5 ml-24">
+        <div class="relative w-full aspect-square justify-end">
+          <img src="/haircut.jpg" alt="our stylist" class="absolute w-full aspect-square object-cover object-center">
+          <div class="relative w-1/2 h-fit flex-col items-center gap-0 justify-center bg-[--w] z-10 bottom-0 left-0 px-5 barber">
+            <div class="w-full items-center justify-center gap-1.5 text-[28px] text-[--c]">
+              <a href="https://instagram.com" class="hover:text-[--l]">
+                <i class="ph-fill ph-instagram-logo"></i>
+              </a>
+              <a href="https://twitch.com" class="hover:text-[--l]">
+                <i class="ph-fill ph-twitch-logo"></i>
+              </a>
+              <a href="https://twitter.com" class="hover:text-[--l]">
+                <i class="ph-fill ph-twitter-logo"></i>
+              </a>
+              <a href="https://youtube.com" class="hover:text-[--l]">
+                <i class="ph-fill ph-youtube-logo"></i>
+              </a>
+            </div>
+            <h5 class="text-[23px] text-[--t] font-extrabold capitalize leading-[0.7] mb-2.5">stylist&nbsp;barber</h5>
+          </div>
+        </div>
+        <div class="relative w-full aspect-square justify-end">
+          <img src="/moustache.jpg" alt="our stylist" class="absolute w-full aspect-square object-cover object-center">
+          <div class="relative w-1/2 h-fit flex-col items-center gap-0 justify-center bg-[--w] z-10 bottom-0 left-0 px-5 barber">
+            <div class="w-full items-center justify-center gap-1.5 text-[28px] text-[--c]">
+              <a href="https://instagram.com" class="hover:text-[--l]">
+                <i class="ph-fill ph-instagram-logo"></i>
+              </a>
+              <a href="https://twitch.com" class="hover:text-[--l]">
+                <i class="ph-fill ph-twitch-logo"></i>
+              </a>
+              <a href="https://twitter.com" class="hover:text-[--l]">
+                <i class="ph-fill ph-twitter-logo"></i>
+              </a>
+              <a href="https://youtube.com" class="hover:text-[--l]">
+                <i class="ph-fill ph-youtube-logo"></i>
+              </a>
+            </div>
+            <h5 class="text-[23px] text-[--t] font-extrabold capitalize leading-[0.7] mb-2.5">stylist&nbsp;barber</h5>
+          </div>
+        </div>
+        <div class="relative w-full aspect-square justify-end">
+          <img src="/tools.jpeg" alt="our stylist" class="absolute w-full aspect-square object-cover object-center">
+          <div class="relative w-1/2 h-fit flex-col items-center gap-0 justify-center bg-[--w] z-10 bottom-0 left-0 px-5 barber">
+            <div class="w-full items-center justify-center gap-1.5 text-[28px] text-[--c]">
+              <a href="https://instagram.com">
+                <i class="ph-fill ph-instagram-logo"></i>
+              </a>
+              <a href="https://twitch.com">
+                <i class="ph-fill ph-twitch-logo"></i>
+              </a>
+              <a href="https://twitter.com">
+                <i class="ph-fill ph-twitter-logo"></i>
+              </a>
+              <a href="https://youtube.com">
+                <i class="ph-fill ph-youtube-logo"></i>
+              </a>
+            </div>
+            <h5 class="text-[23px] text-[--t] font-extrabold capitalize leading-[0.7] mb-2.5">stylist&nbsp;barber</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="blog" class="relative aspect-[4/2.5] flex-col items-center gap-9 bg-[--b]">
+    <h3 class="text-7xl text-center text-[--w] font-extrabold capitalize">our <span class="text-[--c]">lovely</span> clients</h3>
+    <div class="w-full items-center justify-between gap-7">
+      <img src="wwn.svg" id="scm" alt="chair" class="w-3/12 aspect-square object-cover object-left">
+      <div class="relative w-9/12 flex-col items-center gap-3.5 px-11 py-9 border-x-[6px] border-[--c] mt-3.5">
+        <div class="relative w-full items-center gap-3.5 overflow-hidden">
+          <div class="customer w-full flex-col items-center gap-5 unhide">
+            <p class="text-[21px] text-[--l] text-justify font-medium">I visited Trim_me last week, and it was incredible! The hair wash is rejuvenating, and the plaiting is always impeccable. Can't wait to return for another pampering session. Trim_me truly knows how to make me feel special!</p>
+            <div class="w-full flex-col items-end justify-center gap-0.5">
+              <h5 class="text-3xl text-[--c] font-bold">Fatima Abubakar</h5>
+              <p class="text-[--w] text-lg font-medium">Grocer</p>
+            </div>
+          </div>
+          <div class="customer w-full flex-col items-center gap-5">
+            <p class="text-[21px] text-[--l] text-justify font-medium">I stopped by Trim_me a few days ago for a beard grooming session, and I'm impressed! Their beard care service is unmatched, and the hair trimming is always on point. Highly recommend this place for grooming needs!</p>
+            <div class="w-full flex-col items-end justify-center gap-0.5">
+              <h5 class="text-3xl text-[--c] font-bold">Kwame Osei</h5>
+              <p class="text-[--w] text-lg font-medium">Engineer</p>
+            </div>
+          </div>
+          <div class="customer w-full flex-col items-center gap-5">
+            <p class="text-[21px] text-[--l] text-justify font-medium">Just a few days back, I had a wonderful experience at Trim_me! The hair wash is so relaxing, and the plaiting is always done with precision. Already looking forward to my next visit to the salon!</p>
+            <div class="w-full flex-col items-end justify-center gap-0.5">
+              <h5 class="text-3xl text-[--c] font-bold">Aisha Mohamed</h5>
+              <p class="text-[--w] text-lg font-medium">Waiter</p>
+            </div>
+          </div>
+          <div class="customer w-full flex-col items-center gap-5">
+            <p class="text-[21px] text-[--l] text-justify font-medium">I visited Trim_me just a few days ago for beard care, and it was fantastic! Their service is impeccable, and my beard looks great. Can't wait to book my next appointment with them soon!</p>
+            <div class="w-full flex-col items-end justify-center gap-0.5">
+              <h5 class="text-3xl text-[--c] font-bold">Malik Toure</h5>
+              <p class="text-[--w] text-lg font-medium">Teacher</p>
+            </div>
+          </div>
+          <div class="customer w-full flex-col items-center gap-5">
+            <p class="text-[21px] text-[--l] text-justify font-medium">I had an amazing experience at Trim_me last week! The beard trimming was precise, and the hair styling was perfect. I highly recommend Trim_me for anyone looking for top-notch grooming services. I'll definitely be back!</p>
+            <div class="w-full flex-col items-end justify-center gap-0.5">
+              <h5 class="text-3xl text-[--c] font-bold">Zainab Al-Hassan</h5>
+              <p class="text-[--w] text-lg font-medium">Doctor</p>
+            </div>
+          </div>
+        </div>
+        <div class="w-full items-center justify-start gap-3">
+          <span id="prev" class="w-9 aspect-square flex items-center justify-center border-2 border-[--c] rounded-full bg-[--t] overflow-hidden">
+            <i class="ph-fill ph-caret-circle-left text-4xl text-[--c]"></i>
+          </span>
+          <span id="next" class="w-9 aspect-square flex items-center justify-center border-2 border-[--c] rounded-full bg-[--t] overflow-hidden">
+            <i class="ph-fill ph-caret-circle-right text-4xl text-[--c]"></i>
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="relative w-full items-center mt-14">
+      <h3 class="absolute -left-32 text-[--w] text-6xl font-extrabold capitalize vertical">Our&nbsp;<span class="text-[--c]">Article</span></h3>
+    
+      <div class="w-full grid grid-cols-3 gap-5 ml-24">
+        <div class="relative w-full aspect-[3/3.5] justify-end">
+          <img src="/salon.jpg" alt="our stylist" class="absolute w-full h-full object-cover object-center">
+          <div class="relative w-full h-full flex-col gap-0 justify-between bg-[#17191d99] z-10 bottom-0 left-0 px-5 py-7 article">
+            <div class="w-full items-end justify-end gap-1.5">
+              <span class="text-[--w] text-5xl font-semibold">07</span>
+              <h2 class="text-2xl text-[--c] font-extrabold uppercase leading-[0.7] mb-2.5 brightness-125 contrast-125">feb</h2>
+            </div>
+            <h5 class="w-full text-3xl text-[--w] font-bold capitalize leading-[1] mb-2.5">factors to consider before tinting your hair or beard.</h5>
+            <a href="#blog" class="w-fit text-xl text-[--w] font-medium hover:underline hover:decoration-2 hover:underline-offset-2">Read More</a>
+          </div>
+        </div>
+        <div class="relative w-full aspect-[3/3.5] justify-end">
+          <img src="/shampoo.jpg" alt="our stylist" class="absolute w-full h-full object-cover object-center">
+          <div class="relative w-full h-full flex-col gap-0 justify-between bg-[#17191d77] z-10 bottom-0 left-0 px-5 py-7 article">
+            <div class="w-full items-end justify-end gap-1.5">
+              <span class="text-[--w] text-5xl font-semibold">15</span>
+              <h2 class="text-2xl text-[--c] font-extrabold uppercase leading-[0.7] mb-2.5 brightness-125 contrast-125">Aug</h2>
+            </div>
+            <h5 class="w-full text-3xl text-[--w] font-bold capitalize leading-[1] mb-2.5">how to make anti-dandruff shampoo that scales?</h5>
+            <a href="#blog" class="w-fit text-xl text-[--w] font-medium hover:underline hover:decoration-2 hover:underline-offset-2">Read More</a>
+          </div>
+        </div>
+        <div class="relative w-full aspect-[3/3.5] justify-end">
+          <img src="/care.jpg" alt="our stylist" class="absolute w-full h-full object-cover object-center">
+          <div class="relative w-full h-full flex-col gap-0 justify-between bg-[#17191d99] z-10 bottom-0 left-0 px-5 py-7 article">
+            <div class="w-full items-end justify-end gap-1.5">
+              <span class="text-[--w] text-5xl font-semibold">23</span>
+              <h2 class="text-2xl text-[--c] font-extrabold uppercase leading-[0.7] mb-2.5 brightness-125 contrast-125">nov</h2>
+            </div>
+            <h5 class="w-full text-3xl text-[--w] font-bold capitalize leading-[1] mb-2.5">What products to use for a nice scalp and beard?</h5>
+            <a href="#blog" class="w-fit text-xl text-[--w] font-medium hover:underline hover:decoration-2 hover:underline-offset-2">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <footer id="contact" class="relative items-center justify-between gap-9 bg-[--b] pt-72">
+    <div class="absolute w-full top-0 left-0 items-center justify-center">
+      <div class="w-3/5 aspect-[4/1.25] items-center justify-between gap-12 bg-[--t]">
+        <div class="w-fit flex-col justify-center gap-3 pl-7">
+          <h2 class="text-[--w] text-4xl font-extrabold capitalize">enjoy <span class="text-[--c]">15%</span> off all <span class="text-[--c]">VIP</span> services</h2>
+          <p class="text-[--l] text-lg font-medium leading-[1.15]">Get started with 15% off all VIP services and enjoy a number of services like facial, hair and beard care.</p>
+          <button id="location" class="w-fit text-[--w] text-base font-medium bg-[--c] px-5 py-2.5 capitalize rounded">book&nbsp;VIP&nbsp;now</button>
+        </div>
+        <img src="studio.jpg" alt="chair" class="h-full aspect-square object-cover object-left">
+      </div>
+    </div>
+    
+    <div class="w-full justify-between gap-12">
+      <div class="w-5/12 flex-col gap-5">
+        <div class="w-full flex-col gap-2.5">
+          <h3 class="text-4xl text-[--c] font-extrabold flex items-center gap-1.5"><img src="logo.png" alt="logo of trim_me" class="w-10"> Trim_me</h3>
+          <p class="text-[--l] font-medium">Your premier salon for precision cuts, vibrant color, and rejuvenating treatments. Experience expert styling and personalized care today.</p>
+        </div>
+        <div class="w-full items-center gap-3.5 text-4xl text-[--c]">
+          <a href="https://instagram.com" class="hover:text-[--l]">
+            <i class="ph-fill ph-instagram-logo"></i>
+          </a>
+          <a href="https://twitch.com" class="hover:text-[--l]">
+            <i class="ph-fill ph-twitch-logo"></i>
+          </a>
+          <a href="https://twitter.com" class="hover:text-[--l]">
+            <i class="ph-fill ph-twitter-logo"></i>
+          </a>
+          <a href="https://youtube.com" class="hover:text-[--l]">
+            <i class="ph-fill ph-youtube-logo"></i>
+          </a>
+        </div>
+        <p class="text-[--w] text-lg font-medium capitalize">all rights reserved 2024 <span class="text-[--c] font-bold">&copy;Trim_me</span></p>
+      </div>
+      <div class="w-fit flex-col gap-5">
+        <h4 class="text-3xl text-[--w] font-bold capitalize">Links</h4>
+        <div class="w-full flex-col gap-1.5">
+          <a href="#" class="text-[--l] font-medium capitalize hover:text-[--w]">services</a>
+          <a href="#" class="text-[--l] font-medium capitalize hover:text-[--w]">book VIP</a>
+          <a href="#" class="text-[--l] font-medium capitalize hover:text-[--w]">about us</a>
+          <a href="#" class="text-[--l] font-medium capitalize hover:text-[--w]">privacy policy</a>
+          <a href="#" class="text-[--l] font-medium capitalize hover:text-[--w]">contact us</a>
+        </div>
+      </div>
+      <div class="w-fit flex-col gap-5">
+        <h4 class="text-[--w] text-3xl font-bold capitalize">business hours</h4>
+        <div class="w-full flex-col pl-5 gap-3.5">
+          <div class="w-fit flex-col gap-1.5">
+            <h4 class="text-xl text-[--w] font-bold capitalize leading-[1]">Sun - Thur</h4>
+            <p class="text-lg text-[--c] font-medium">09:00 - 21:00</p>
+          </div>
+          <div class="w-fit flex-col gap-1.5">
+            <h4 class="text-xl text-[--w] font-bold capitalize leading-[1]">Friday</h4>
+            <p class="text-lg text-[--c] font-medium">14:00 - 21:00</p>
+          </div>
+          <div class="w-fit flex-col gap-1.5">
+            <h4 class="text-xl text-[--w] font-bold capitalize leading-[1]">Saturday</h4>
+            <p class="text-lg text-[--c] font-medium">10:00 - 21:00</p>
+          </div>
+        </div>
+      </div>
+      <div class="w-fit flex-col gap-5">
+        <h4 class="text-[--w] text-3xl font-bold capitalize">contact us</h4>
+        <div class="w-full flex-col pl-5 gap-3.5">
+          <div class="w-fit flex-col gap-1.5">
+            <h4 class="text-xl text-[--w] font-bold capitalize leading-[1]">telephone:</h4>
+            <a href="tel:+256758185721" class="text-[--c] font-medium brightness-125">+256 758 185721</a>
+          </div>
+          <div class="w-fit flex-col gap-1.5">
+            <h4 class="text-xl text-[--w] font-bold capitalize leading-[1]">our email:</h4>
+            <a href="mailto:yassinkatungi5@gmail.com" class="text-[--c] font-medium brightness-125">yassinkatungi5@gmail.com</a>
+          </div>
+          <div class="w-fit flex-col gap-1.5">
+            <h4 class="text-xl text-[--w] font-bold capitalize leading-[1]"></h4>
+            <p class="text-[--l] font-medium">Kla-Msk Road, Nakasozi Buddo.<br> Wakiso District, Uganda.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--
+  <div> Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik"> Freepik </a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com'</a></div>
+  <a href="https://www.flaticon.com/free-icons/microphone" title="microphone icons">Microphone icons created by Freepik - Flaticon</a>
+  -->
+
+  <!-- my javascript code-->
+  <script src="main.js"></script>
+</body>
+</html>
